@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity List Hariando</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <div class="container" id="add-todo">
+      <h2 class="container-header text-center">Aktivitas Kegiatan</h2>
+      <hr>
+      <img src="Profile.png" alt="Hariando Muthi">
+      <p class="keteranganNama">Hariando Muthi</p>
+      <form class="form" action="#" id="form">
+        <div class="form-group form-title">
+          <label for="title">Masukkan hal yang akan dilakukan</label>
+          <input type="text" id="title" name="title" placeholder="Masukkan Kegiatan Kamu" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="date">Masukkan tanggal harus selesai</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <input type="submit" value="Simpan" name="Submit" class="btn-submit">
+
+        <button class="btn-Biru-Body" onclick="changeBGcolor()">Ubah Warna Body</button>
+
+        <input type="reset" value="Reset" name="reset" class="btn-reset">
+      </form>
+      <hr>
+      <h2 class="container-header text-center">Kegiatan Yang harus dilakukan : </h2>
+      <div class="list-item" id="todos"></div>
+      <hr>
+      <h2 class="container-header text-center">Kegiatan Yang sudah dilakukan : </h2>
+      <div class="list-item" id="completed-todos"></div>
+
+    </div>
+    <script src="Js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
